@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="이든관리형학습센터 2027 하남 미사 윈터스쿨 모집요강. 고등부·중등부, 이든X학원 연계 특별강좌(영어 독해·수학 수능/내신·과학), 온라인 사전 예약.">
+<title>2027 이든 윈터스쿨 모집요강 | 하남 미사</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&family=Gowun+Batang:wght@700&display=swap">
+<style>
+  /* Layout: 겨울방학 8주를 '달력'처럼 읽히게. 일정 스트립 → 관리 → EDEN 시리즈 → 사전 예약 순서의 한 줄 흐름 */
+  :root {
+    --bg: #f3f6fa;
+    --surface: #ffffff;
+    --ink: #0f1d33;
+    --muted: #55657a;
+    --line: #d5dfea;
+    --frost: #e4ecf6;
+    --accent: #1f4fa8;
+    --signal: #c8372d;
+    --tbd-bg: #fff4d6;
+    --tbd-ink: #7a5300;
+    --hero-bg: #0f1d33;
+    --hero-ink: #eef3fa;
+    --hero-muted: #a9b8cc;
+    --font-display: "Gowun Batang", "Nanum Myeongjo", serif;
+    --font-body: "IBM Plex Sans KR", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b1422; --surface: #121e30; --ink: #e6edf5; --muted: #95a5ba; --line: #26364d;
+      --frost: #17263b; --accent: #86adf0; --signal: #ef6a5f; --tbd-bg: #3a2f12; --tbd-ink: #f3d27a;
+      --hero-bg: #060d18; --hero-ink: #eef3fa; --hero-muted: #9fb0c6; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b1422; --surface: #121e30; --ink: #e6edf5; --muted: #95a5ba; --line: #26364d;
+    --frost: #17263b; --accent: #86adf0; --signal: #ef6a5f; --tbd-bg: #3a2f12; --tbd-ink: #f3d27a;
+    --hero-bg: #060d18; --hero-ink: #eef3fa; --hero-muted: #9fb0c6; color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.7; word-break: keep-all; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding-inline: 20px; }
+  section { padding-block: 72px; }
+  h1, h2, h3 { text-wrap: balance; line-height: 1.3; margin: 0; }
+  h2 { font-family: var(--font-display); font-size: clamp(1.6rem, 4vw, 2.2rem); }
+  p { margin: 0; }
+  .eyebrow { font-family: var(--font-mono); font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  .sec-head { display: grid; gap: 10px; margin-bottom: 36px; max-width: 680px; }
+  .sec-head p { color: var(--muted); }
+  .tbd { display: inline-block; background: var(--tbd-bg); color: var(--tbd-ink); font-size: .82rem; font-weight: 700; padding: 1px 8px; border-radius: 4px; }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  /* Hero */
+  .hero { background: var(--hero-bg); color: var(--hero-ink); padding-block: 84px 72px; position: relative; overflow: hidden; }
+  .hero canvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; opacity: .55; }
+  .hero .wrap { position: relative; display: grid; gap: 22px; }
+  .hero .eyebrow { color: #9cc0ff; }
+  .hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 6vw, 3.6rem); }
+  .hero .lead { color: var(--hero-muted); font-size: clamp(1rem, 2.4vw, 1.2rem); max-width: 36em; }
+  .hero-dates { display: flex; flex-wrap: wrap; gap: 10px; font-family: var(--font-mono); font-size: .92rem; }
+  .hero-dates span { border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: 4px 14px; }
+  .cta { display: inline-block; background: var(--signal); color: #fff; text-decoration: none; font-weight: 700; padding: 15px 34px; border-radius: 999px; justify-self: start; transition: transform .2s; }
+  .cta:hover { transform: translateY(-3px); }
+
+  /* Problem */
+  .problem { padding-block: 0 24px; }
+  .problem-card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 40px 32px; margin-top: -36px; position: relative; display: grid; gap: 14px; text-align: center; }
+  .problem-card .quote { font-family: var(--font-display); color: var(--signal); font-size: clamp(1.3rem, 3.4vw, 1.9rem); line-height: 1.45; }
+  .problem-card p { color: var(--muted); }
+
+  /* Schedule */
+  .pre-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 28px; }
+  .ticket { background: var(--surface); border: 1px dashed var(--line); border-radius: 14px; padding: 20px; display: grid; gap: 4px; }
+  .ticket .round { font-size: .85rem; color: var(--muted); font-weight: 700; }
+  .ticket .date { font-family: var(--font-mono); font-size: 1.7rem; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .winter-band { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 26px; display: grid; gap: 18px; }
+  .winter-band .top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .winter-band .range { font-family: var(--font-mono); font-size: clamp(1.15rem, 3vw, 1.5rem); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .weeks { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 6px; }
+  .week { background: var(--frost); border-radius: 8px; padding: 10px 6px; text-align: center; font-family: var(--font-mono); font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .week b { display: block; color: var(--ink); font-size: .95rem; }
+  .note { color: var(--muted); font-size: .9rem; }
+
+  /* Guide table */
+  .guide { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+  .guide-row { display: grid; grid-template-columns: 150px minmax(0, 1fr); border-bottom: 1px solid var(--line); }
+  .guide-row:last-child { border-bottom: 0; }
+  .guide-row dt { padding: 16px 20px; font-weight: 700; color: var(--accent); background: var(--frost); }
+  .guide-row dd { margin: 0; padding: 16px 20px; }
+
+  /* 4대 관리 */
+  .manage { background: var(--hero-bg); color: var(--hero-ink); }
+  .manage .sec-head p { color: var(--hero-muted); }
+  .manage .eyebrow { color: #9cc0ff; }
+  .manage-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .m-card { border: 1px solid rgba(255,255,255,.18); border-radius: 16px; padding: 26px; display: grid; gap: 12px; align-content: start; }
+  .m-card h3 { font-size: 1.25rem; display: flex; gap: 10px; align-items: baseline; }
+  .m-card h3 small { font-family: var(--font-mono); font-size: .75rem; color: #9cc0ff; letter-spacing: .08em; }
+  .m-card .sum { color: var(--hero-muted); }
+  .m-card ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
+  .m-card li strong { color: #fff; }
+  .manage-foot { margin-top: 22px; color: var(--hero-muted); font-size: .92rem; }
+
+  /* Signature */
+  .sig-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .sig { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 30px; display: grid; gap: 14px; align-content: start; }
+  .sig h3 { font-size: 1.35rem; color: var(--accent); }
+  .sig .q { font-weight: 700; }
+  .sig dl { margin: 0; display: grid; gap: 12px; }
+  .sig dt { font-weight: 700; }
+  .sig dd { margin: 0; color: var(--muted); font-size: .95rem; }
+  .matrix { overflow-x: auto; }
+  .matrix table { border-collapse: collapse; width: 100%; font-size: .88rem; min-width: 420px; }
+  .matrix th, .matrix td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  .matrix th { background: var(--frost); }
+
+  /* EDEN series */
+  .engines { display: grid; gap: 26px; }
+  .engine { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 20px; }
+  .engine-label { display: grid; gap: 6px; align-content: start; }
+  .engine-label h3 { font-family: var(--font-display); font-size: 1.3rem; }
+  .engine-label p { color: var(--muted); font-size: .9rem; }
+  .steps { display: grid; gap: 10px; }
+  details.step { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+  details.step summary { list-style: none; cursor: pointer; padding: 16px 20px; display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; }
+  details.step summary::-webkit-details-marker { display: none; }
+  .step .no { font-family: var(--font-mono); font-weight: 600; color: var(--accent); font-size: 1.1rem; }
+  .step .name { font-weight: 700; }
+  .step .name small { display: block; font-weight: 400; color: var(--muted); font-size: .88rem; }
+  .step .chev { color: var(--muted); transition: transform .2s; }
+  details.step[open] .chev { transform: rotate(180deg); }
+  .step .body { padding: 0 20px 18px 76px; display: grid; gap: 8px; color: var(--muted); font-size: .95rem; }
+  .step .body ol { margin: 0; padding-left: 1.2em; }
+  .step .body b { color: var(--ink); }
+
+
+  /* Add-on programs */
+  .addons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .addon { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 30px 28px; display: grid; gap: 18px; align-content: start; }
+  .addon-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .addon-top h3 { font-family: var(--font-display); font-size: 1.45rem; }
+  .addon-top .sub { color: var(--muted); font-size: .92rem; margin-top: 4px; }
+  .price { text-align: right; font-family: var(--font-mono); line-height: 1.3; }
+  .price b { display: block; font-size: 1.5rem; color: var(--signal); font-variant-numeric: tabular-nums; }
+  .price span { font-size: .8rem; color: var(--muted); }
+  .addon.wide { grid-column: 1 / -1; }
+  .addon .pitch { font-weight: 700; font-size: 1.05rem; }
+  .addon h4 { margin: 0; font-size: .95rem; color: var(--accent); }
+  .addon ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; font-size: .94rem; }
+  .addon .blk { display: grid; gap: 8px; }
+  .lv { overflow-x: auto; }
+  .lv table { border-collapse: collapse; width: 100%; font-size: .88rem; }
+  .lv th, .lv td { border-bottom: 1px solid var(--line); padding: 7px 6px; text-align: left; vertical-align: top; }
+  .lv th { color: var(--muted); font-weight: 500; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips span { background: var(--frost); border-radius: 999px; padding: 3px 10px; font-size: .82rem; }
+  .dot { display: inline-block; width: .7em; height: .7em; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+  .addon-note { margin-top: 18px; color: var(--muted); font-size: .9rem; }
+
+  /* Day / week flow */
+  .two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 26px; display: grid; gap: 14px; align-content: start; }
+  .panel h3 { font-size: 1.15rem; }
+  .flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; counter-reset: f; }
+  .flow li { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 10px; font-size: .94rem; }
+  .flow li span { font-weight: 700; color: var(--accent); }
+  .week-table { overflow-x: auto; }
+  .week-table table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  .week-table td, .week-table th { border-bottom: 1px solid var(--line); padding: 9px 6px; text-align: left; vertical-align: top; }
+  .week-table th { font-family: var(--font-mono); color: var(--accent); width: 36px; }
+
+
+  .tt { margin-top: 18px; }
+  .tt-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .tt-cap { font-size: .85rem; font-weight: 700; color: var(--accent); margin-bottom: 6px; }
+  .tt table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  .tt th, .tt td { border-bottom: 1px solid var(--line); padding: 6px 8px; text-align: left; }
+  .tt th { font-family: var(--font-mono); font-weight: 600; width: 70px; font-variant-numeric: tabular-nums; }
+  .tt td.len { text-align: right; color: var(--muted); font-family: var(--font-mono); font-size: .85rem; }
+  .tt tr.rest td, .tt tr.rest th { color: var(--muted); background: var(--frost); }
+  @media (max-width: 760px) { .tt-grid { grid-template-columns: minmax(0, 1fr); } }
+
+  /* Parents + refund */
+  .refund { overflow-x: auto; }
+  .refund table { border-collapse: collapse; width: 100%; background: var(--surface); border-radius: 14px; overflow: hidden; }
+  .refund th, .refund td { border: 1px solid var(--line); padding: 14px 16px; text-align: left; }
+  .refund th { background: var(--frost); }
+  .refund td.amt { font-family: var(--font-mono); font-weight: 600; font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+
+  /* Director */
+  .director { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+  .director blockquote { margin: 0; font-family: var(--font-display); font-size: clamp(1.2rem, 2.8vw, 1.5rem); line-height: 1.6; }
+  .director .body { display: grid; gap: 12px; color: var(--muted); margin-top: 18px; }
+  .director ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
+  .director .sign { font-weight: 700; color: var(--ink); }
+
+  /* Form */
+  .apply { background: var(--frost); }
+  .form-card { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 36px 28px; max-width: 700px; margin: 0 auto; display: grid; gap: 22px; }
+  .form-card h2 { text-align: center; }
+  .form-card .intro { text-align: center; color: var(--muted); }
+  form { display: grid; gap: 20px; }
+  .field { display: grid; gap: 6px; }
+  .field-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  label.lbl, .lbl { font-weight: 700; font-size: .96rem; }
+  .req { color: var(--signal); margin-left: 4px; }
+  input[type=text], input[type=tel], input[type=date], select, textarea { width: 100%; padding: 11px 12px; border: 1px solid var(--line); border-radius: 8px; font: inherit; font-size: .95rem; background: var(--surface); color: var(--ink); }
+  textarea { resize: vertical; }
+  .hint { font-size: .82rem; color: var(--muted); }
+  .group { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: grid; gap: 12px; }
+  .group .lbl { color: var(--accent); }
+  .group.sub .lbl { color: var(--ink); border-left: 4px solid var(--signal); padding-left: 10px; }
+  .checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; }
+  .checks.one { grid-template-columns: minmax(0, 1fr); }
+  .checks label, .radios label { display: flex; gap: 8px; align-items: flex-start; font-size: .94rem; cursor: pointer; }
+  .checks input, .radios input { margin-top: 5px; }
+  .radios { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+  .slots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .slots label { border: 1px solid var(--line); border-radius: 8px; padding: 8px; text-align: center; cursor: pointer; font-family: var(--font-mono); font-size: .9rem; }
+  .slots label:has(input:checked) { border-color: var(--accent); background: var(--frost); }
+  .slot-day { font-size: .82rem; font-weight: 700; color: var(--accent); }
+  .dow { font-weight: 700; color: var(--accent); min-width: 44px; }
+  .date-line { display: flex; gap: 10px; align-items: center; }
+  .agree { border-top: 1px solid var(--line); padding-top: 16px; font-size: .88rem; color: var(--muted); }
+  .agree label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+  .submit { width: 100%; padding: 17px; background: var(--accent); color: #fff; border: 0; border-radius: 12px; font: inherit; font-size: 1.1rem; font-weight: 700; cursor: pointer; }
+  :root:not([data-theme="light"]) .submit { color: var(--surface); }
+  .submit:disabled { opacity: .6; cursor: wait; }
+  .after { text-align: center; color: var(--muted); font-size: .9rem; }
+  .msg { border-radius: 10px; padding: 14px 16px; font-size: .95rem; }
+  .msg.ok { background: var(--frost); color: var(--ink); border: 1px solid var(--accent); }
+  .msg.err { background: var(--tbd-bg); color: var(--tbd-ink); }
+
+  footer { background: var(--hero-bg); color: var(--hero-muted); padding-block: 56px; text-align: center; }
+  footer .wrap { display: grid; gap: 10px; justify-items: center; }
+  footer h2 { color: var(--hero-ink); }
+  footer .tel { font-family: var(--font-mono); font-size: 1.3rem; color: var(--hero-ink); user-select: all; }
+  footer small { opacity: .7; }
+
+  @media (max-width: 760px) {
+    section { padding-block: 52px; }
+    .addon.wide { grid-column: auto; }
+    .addons, .pre-grid, .manage-grid, .sig-grid, .two, .director, .field-row { grid-template-columns: minmax(0, 1fr); }
+    .weeks { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .engine { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+    .guide-row { grid-template-columns: minmax(0, 1fr); }
+    .guide-row dt { padding: 10px 16px; }
+    .step .body { padding: 0 18px 16px; }
+    .checks { grid-template-columns: minmax(0, 1fr); }
+    .form-card { padding: 28px 18px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .cta, .step .chev { transition: none; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <canvas id="snow" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <p class="eyebrow">2027 Hanam Misa · Winter School · 모집요강</p>
+    <h1>2027 이든 윈터스쿨 모집요강<br>겨울 8주, 새 학기 성적이 여기서 정해집니다.</h1>
+    <p class="lead">남들이 쉬며 느슨해지는 겨울방학. 이든의 4대 관리와 EDEN 3대 엔진, 이든X학원 연계 특별강좌로 8주 동안 진짜 공부 습관과 실력을 완성합니다.</p>
+    <div class="hero-dates">
+      <span>Pre-Winter 11.16 · 12.1 · 12.14</span>
+      <span>Winter 2027.1.4 – 2.28</span>
+    </div>
+    <a href="#apply" class="cta">2027 사전 예약하기</a>
+  </div>
+</header>
+
+<section class="problem">
+  <div class="wrap">
+    <div class="problem-card">
+      <h2>의지력에 아이의 겨울방학을 맡기시겠습니까?</h2>
+      <p>늦잠과 스마트폰으로 생활 리듬이 가장 쉽게 무너지는 계절입니다.<br>흔들리는 하루를 붙잡아 줄 시스템이 필요할 때입니다.</p>
+      <p class="quote">"방학 계획표는<br>1월 첫 주에만 지켜졌다"</p>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Schedule</p>
+      <h2>2027 윈터스쿨 일정</h2>
+      <p>수능이 끝나고 겨울방학이 시작되기 전, Pre-Winter School로 먼저 리듬을 만들고 본과정 8주로 이어갑니다.</p>
+    </div>
+    <div class="pre-grid">
+      <div class="ticket"><span class="round">Pre-Winter School 1차</span><span class="date">11.16 (월)</span></div>
+      <div class="ticket"><span class="round">Pre-Winter School 2차</span><span class="date">12.1 (화)</span></div>
+      <div class="ticket"><span class="round">Pre-Winter School 3차</span><span class="date">12.14 (월)</span></div>
+    </div>
+    <div class="winter-band">
+      <div class="top">
+        <strong>Winter School 본과정 · 8주</strong>
+        <span class="range">2027.1.4 (월) – 2.28 (일)</span>
+      </div>
+      <div class="weeks" aria-label="8주 주차별 일정">
+        <div class="week"><b>1주</b>1.4–1.10</div>
+        <div class="week"><b>2주</b>1.11–1.17</div>
+        <div class="week"><b>3주</b>1.18–1.24</div>
+        <div class="week"><b>4주</b>1.25–1.31</div>
+        <div class="week"><b>5주</b>2.1–2.7</div>
+        <div class="week"><b>6주</b>2.8–2.14</div>
+        <div class="week"><b>7주</b>2.15–2.21</div>
+        <div class="week"><b>8주</b>2.22–2.28</div>
+      </div>
+      <p class="note">Pre-Winter School 차수별 기간과 운영 내용 <span class="tbd">확인 필요</span></p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Admission</p>
+      <h2>모집 요강</h2>
+    </div>
+    <dl class="guide">
+      <div class="guide-row"><dt>모집 대상</dt><dd><b>고등부</b> 예비 고1 · 예비 고2 · 예비 고3 · N수생<br><b>중등부</b> 예비 중1 · 중2 · 중3 <span class="tbd">대상 학년 확인 필요</span></dd></div>
+      <div class="guide-row"><dt>운영 기간</dt><dd>Pre-Winter 11.16 (월) / 12.1 (화) / 12.14 (월) 시작<br>본과정 2027.1.4 (월) – 2.28 (일), 8주</dd></div>
+      <div class="guide-row"><dt>운영 시간</dt><dd><b>고등부</b> 08:00 – 22:00, 수능 시간표와 같은 교시제<br>🌙 22시 이후 8·9교시(22:10 – 24:00)까지 이어서 학습 가능<br><b>중등부</b> 09:00 – 22:00, 시간 협의 가능</dd></div>
+      <div class="guide-row"><dt>운영 방식</dt><dd>이든 4대 관리(출결·생활·학습관리·학습코칭) + EDEN 3대 엔진(습관·실력·전략)</dd></div>
+      <div class="guide-row"><dt>특별강좌</dt><dd>이든X학원 연계 · 영어 독해 / 수학 수능·내신 / 과학 (선택 수강, <a href="#programs">아래 안내</a>)</dd></div>
+      <div class="guide-row"><dt>수강료</dt><dd>윈터스쿨 상담 문의 · 특별강좌는 과목별 안내 참고</dd></div>
+      <div class="guide-row"><dt>모집 기간</dt><dd>선착순 마감</dd></div>
+      <div class="guide-row"><dt>접수</dt><dd>현장 방문 접수 또는 온라인 사전 예약</dd></div>
+      <div class="guide-row"><dt>장소</dt><dd>경기도 하남시 미사강변대로 80, 그린프라자 7층 이든관리형학습센터</dd></div>
+      <div class="guide-row"><dt>문의</dt><dd>010-8442-2817</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="manage" id="manage">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">4 Pillars of Care</p>
+      <h2>이든 4대 관리</h2>
+      <p>출결관리와 생활관리가 공부할 수밖에 없는 환경을 만들고, 학습관리와 학습코칭이 그 시간을 실제 성적으로 바꿉니다.</p>
+    </div>
+    <div class="manage-grid">
+      <article class="m-card">
+        <h3>출결관리 <small>ATTENDANCE</small></h3>
+        <p class="sum">하루를 수능 시계에 맞춥니다.</p>
+        <ul>
+          <li><strong>수능형 교시제</strong> 실제 수능 시간표와 같은 타종으로 하루가 움직이고, 교시 중 무단 출입을 통제합니다.</li>
+          <li><strong>등·하원 확인</strong> 지각·결석은 즉시 체크해 학부모님께 안내합니다.</li>
+          <li><strong>사전 연락 원칙</strong> 무단 결석 10점, 사전 사유 결석 4점. 외출·조퇴·지각은 무단 5점, 사전 사유 2점입니다.</li>
+        </ul>
+      </article>
+      <article class="m-card">
+        <h3>생활관리 <small>LIFE</small></h3>
+        <p class="sum">공부 외의 모든 것을 차단합니다.</p>
+        <ul>
+          <li><strong>Digital Detox Zone</strong> 등원 시 스마트폰 제출, 학습용 태블릿은 MDM으로 유튜브·웹서핑·게임을 막습니다.</li>
+          <li><strong>3중 밀착 순찰</strong> 졸음, 딴짓, 친목 행위를 상시 순찰로 바로잡습니다.</li>
+          <li><strong>벌점제</strong> 20점 집중 상담, 30점 학부모 연락·원장 면담, 40점 퇴원 협의. 소명 기회를 주고 매달 초기화합니다.</li>
+        </ul>
+      </article>
+      <article class="m-card">
+        <h3>학습관리 <small>STUDY</small></h3>
+        <p class="sum">매일의 공부가 기억으로 남게 합니다.</p>
+        <ul>
+          <li><strong>PDS 플래너 + 이든타</strong> 계획하고, 순공 시간을 기록하고, 하원 전에 실행 여부를 검사합니다.</li>
+          <li><strong>매일 어휘 루틴</strong> EDEN_VOC 영단어 80개, 국어 필수 어휘 10개와 예문 10개.</li>
+          <li><strong>EDEN_CUE 5분 인출</strong> 강의 직후 백지에 핵심을 꺼내 쓰고 인출노트로 정리합니다.</li>
+        </ul>
+      </article>
+      <article class="m-card">
+        <h3>학습코칭 <small>COACHING</small></h3>
+        <p class="sum">진단, 처방, 교정, 설계의 순환으로 약점을 좁힙니다.</p>
+        <ul>
+          <li><strong>진단</strong> 수능 메타PRO 분석으로 아는 문제와 운으로 맞힌 문제를 가릅니다.</li>
+          <li><strong>처방·교정</strong> EDEN_KEY가 매주 취약 유형을, EDEN_GO가 그날의 사고 오류를 바로잡습니다.</li>
+          <li><strong>설계</strong> EDEN_MAP으로 황붕주 원장이 수시·정시 로드맵을 함께 설계합니다.</li>
+        </ul>
+      </article>
+    </div>
+    <p class="manage-foot">모든 벌점 부과 내역은 학생과 학부모님께 즉시 통지됩니다.</p>
+  </div>
+</section>
+
+<section id="signature">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Eden Signature</p>
+      <h2>자리에 앉히는 것을 넘어, 사고의 과정을 교정합니다</h2>
+    </div>
+    <div class="sig-grid">
+      <article class="sig">
+        <h3>AI 기반 1:1 메타 인출 코칭</h3>
+        <p class="q">"말로 명확히 설명하지 못하면 아는 것이 아닙니다."</p>
+        <dl>
+          <div><dt>20년 기출 AI 분석과 질의응답</dt><dd>수능·학평·교육청 기출과 EBS 연계교재를 AI로 분석한 자료를 바탕으로 막힌 문제를 바로 해결합니다.</dd></div>
+          <div><dt>골든타임 5분 인출 노트</dt><dd>학습 직후 5분 동안 배운 내용을 백지에 쏟아내고 인출 노트로 정리합니다.</dd></div>
+          <div><dt>1:1 대면 점검</dt><dd>코칭 선생님 앞에서 풀이의 핵심 발상과 근거를 직접 말로 설명하며 장기 기억으로 굳힙니다.</dd></div>
+        </dl>
+      </article>
+      <article class="sig">
+        <h3>수능 메타PRO 분석</h3>
+        <p class="q">몇 점인지가 아니라, 어디에 시간을 써야 하는지를 알려줍니다.</p>
+        <p style="color: var(--muted); font-size: .95rem;">문항마다 '맞혔는가'와 '확신했는가'를 함께 표시해 과목별 3쪽 시각화 보고서로 드리고, 멘토가 1:1 역질문 PT로 처방합니다.</p>
+        <div class="matrix">
+          <table>
+            <thead><tr><th></th><th>확신하고 풀었다</th><th>확신 없이 풀었다</th></tr></thead>
+            <tbody>
+              <tr><th>맞힌 문항</th><td>진짜 아는 문제<br>다시 풀 필요 없음</td><td>운으로 맞힌 문제<br>오답처럼 복습</td></tr>
+              <tr><th>틀린 문항</th><td>안다고 착각한 문제<br>개념 오류 교정 (EDEN_GO)</td><td>몰라서 틀린 문제<br>취약 유형 집중 (EDEN_KEY)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="eden" style="background: var(--surface);">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">EDEN Series</p>
+      <h2>계획 → 실행 → 인출 → 점검이 매일 이어집니다</h2>
+      <p>메타인지 학습법과 AI 기출 분석을 결합한 이든의 학습 과정을 역할에 따라 세 개의 엔진으로 운영합니다. 항목을 누르면 운영 방식을 볼 수 있습니다.</p>
+    </div>
+    <div class="engines">
+      <div class="engine">
+        <div class="engine-label"><p class="eyebrow">Habit</p><h3>습관 엔진</h3><p>매일</p></div>
+        <div class="steps">
+          <details class="step">
+            <summary><span class="no">01</span><span class="name">PDS 플래너 + 이든타<small>월간 → 주간·일간 계획, 순공 시간 기록, 하원 전 점검</small></span><span class="chev">▾</span></summary>
+            <div class="body">
+              <ol>
+                <li>월간계획표(EDEN MAP)로 한 달 목표와 진도, 회독 수를 정합니다.</li>
+                <li>주간·일간 할 일로 쪼개 이든타에 반복 할 일로 등록합니다.</li>
+                <li>이든타로 과목별 순공 시간을 기록해 계획과 실행을 나란히 봅니다.</li>
+                <li>하원 전 관리 선생님이 실행 여부를 검사하고 다음 날 계획에 반영합니다.</li>
+              </ol>
+              <p><b>관리 포인트</b> 플래너 미작성·미검사 퇴실 시 벌점 3점.</p>
+            </div>
+          </details>
+          <details class="step">
+            <summary><span class="no">02</span><span class="name">EDEN_VOC<small>모르는 단어만 골라 집중 반복하는 메타인지 영단어, 하루 80개</small></span><span class="chev">▾</span></summary>
+            <div class="body">
+              <ol>
+                <li>수능 필수 어휘부터 고난도 단어까지 하루 80개를 목표로 합니다.</li>
+                <li>메타인지 테스트로 아는 단어와 모르는 단어를 가릅니다.</li>
+                <li>모르는 단어만 집중 반복해 장기 기억으로 넘깁니다.</li>
+              </ol>
+              <p><b>기대 효과</b> 어휘 공백 없이 독해의 기초 체력을 완성합니다.</p>
+            </div>
+          </details>
+          <details class="step">
+            <summary><span class="no">03</span><span class="name">국어 필수 어휘<small>비문학 어휘·문법 개념어·고전 시가, 하루 10개 + 예문 10개</small></span><span class="chev">▾</span></summary>
+            <div class="body">
+              <p>하루 어휘 10개와 예문 10개를 학습합니다. 뜻만 외우지 않고 예문 속 쓰임으로 익혀, 선지에서 바뀐 표현도 알아봅니다.</p>
+              <p><b>기대 효과</b> 국어는 물론 탐구 과목의 지문·선지 이해력까지 끌어올립니다.</p>
+            </div>
+          </details>
+          <details class="step">
+            <summary><span class="no">04</span><span class="name">EDEN_CUE<small>강의 직후 5분, 책을 덮고 백지에 꺼내 쓰는 인출 훈련</small></span><span class="chev">▾</span></summary>
+            <div class="body">
+              <ol>
+                <li>강의가 끝나면 교재를 덮고 5분간 백지에 핵심 내용을 적습니다.</li>
+                <li>떠오르지 않은 부분을 확인해 보완합니다.</li>
+                <li>AI 튜터 피드백을 받은 뒤 인출노트로 정리합니다.</li>
+              </ol>
+              <p><b>기대 효과</b> 금방 사라지는 단기 기억을 시험장까지 가져갈 장기 기억으로 바꿉니다.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+      <div class="engine">
+        <div class="engine-label"><p class="eyebrow">Skill</p><h3>실력 엔진</h3><p>상시 · 매주</p></div>
+        <div class="steps">
+          <details class="step">
+            <summary><span class="no">05</span><span class="name">EDEN_GO<small>막힌 문제는 이든타에 기록, 화·목 질의응답 시간에 AI 기출 자료로 해결</small></span><span class="chev">▾</span></summary>
+            <div class="body">
+              <ol>
+                <li>공부 중 막힌 문제는 이든타에 질문으로 남기고 공부를 이어갑니다.</li>
+                <li>정해진 질의응답 시간(화·목)에 EDEN_GO로 개념과 기출 근거를 찾아 해결합니다.</li>
+                <li>풀리지 않은 질문은 선생님이 풀이 과정을 역추적해 어긋난 지점을 짚어 줍니다.</li>
+              </ol>
+              <p><b>기대 효과</b> 정답만 확인하고 넘어가는 공부를 막고 오답의 뿌리를 뽑습니다.</p>
+            </div>
+          </details>
+          <details class="step">
+            <summary><span class="no">06</span><span class="name">EDEN_KEY<small>매주 누적 오답에서 취약 유형만 골라 고난도 유사 문항 제공</small></span><span class="chev">▾</span></summary>
+            <div class="body">
+              <ol>
+                <li>매주 누적된 오답 데이터로 학생별 취약 유형을 추출합니다.</li>
+                <li>그 유형에 해당하는 고난도 유사 문항을 맞춤으로 제공합니다.</li>
+                <li>다음 주 오답 데이터로 약점이 줄었는지 다시 확인합니다.</li>
+              </ol>
+            </div>
+          </details>
+          <details class="step">
+            <summary><span class="no">07</span><span class="name">EDEN_SYNC<small>최근 20년 기출과 올해 EBS 연계교재를 단원별로 묶어 학습</small></span><span class="chev">▾</span></summary>
+            <div class="body">
+              <ol>
+                <li>최근 20년 수능·학평·교육청 기출을 EBS 연계교재 단원별로 묶어 학습합니다.</li>
+                <li>월별 출제 경향에 맞춰 학습 범위를 집중합니다.</li>
+                <li>퀴즈, 영상, 플래시카드 등 여러 형식으로 같은 내용을 반복합니다.</li>
+              </ol>
+            </div>
+          </details>
+        </div>
+      </div>
+      <div class="engine">
+        <div class="engine-label"><p class="eyebrow">Strategy</p><h3>전략 엔진</h3><p>정기</p></div>
+        <div class="steps">
+          <details class="step">
+            <summary><span class="no">08</span><span class="name">EDEN_MAP<small>황붕주 원장이 생기부와 성적 추이를 분석해 수시·정시 로드맵 설계</small></span><span class="chev">▾</span></summary>
+            <div class="body">
+              <ol>
+                <li>입시 전문 컨설턴트 황붕주 원장이 생기부와 내신·모의고사 성적 추이를 함께 분석합니다.</li>
+                <li>메타PRO 분석 결과를 반영해 남은 기간의 학습 우선순위를 정합니다.</li>
+                <li>수시·정시 합격 로드맵을 설계하고 상담 때마다 점검합니다.</li>
+              </ol>
+              <p><b>겨울방학에 특히</b> 새 학년 내신과 모의고사 전략을 개학 전에 정리합니다.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="programs">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Special Courses · 이든X학원 연계</p>
+      <h2>윈터스쿨 특별강좌</h2>
+      <p>윈터스쿨 관리 위에 이든X학원의 과목별 수업을 더할 수 있습니다. 4주 단위(1–4주 / 5–8주) 또는 8주로 신청하며, 사전 예약서의 추가 과목 신청란에서 함께 선택하실 수 있습니다.</p>
+    </div>
+    <div class="addons">
+      <article class="addon">
+        <div class="addon-top">
+          <div><p class="eyebrow">Special 01 · English</p><h3>영어 독해 <small style="font-size:.8rem;color:var(--muted);">이든영어</small></h3><p class="sub">출제위원 출신 원장이 설계한 시스템 독해</p></div>
+          <p class="price"><b>4주 150,000원</b><span>8주 290,000원</span></p>
+        </div>
+        <p class="pitch">해석은 되는데 답이 틀린다면, 문제는 양이 아니라 읽는 방법입니다.</p>
+        <p style="color: var(--muted); font-size: .95rem;">문제를 많이 푸는 영어가 아니라 영어를 제대로 읽게 만드는 영어입니다. 시스템이 묻고, 학생이 답하고, 바로 확인하고, 다시 반복하는 능동 훈련으로 거꾸로 해석하던 습관을 앞에서부터 읽는 직진형 사고로 바꿉니다.</p>
+        <div class="blk">
+          <h4>3대 독해 훈련</h4>
+          <ul>
+            <li><b>생각하며 읽기</b> 동사를 보고 '어디서, 무엇을, 어떻게, 왜'를 떠올리며 번역 없이 빠르게 읽습니다.</li>
+            <li><b>의미단위 직독직해</b> 영어 어순 그대로 끊어 읽어 문장 끝에서 되돌아오는 습관을 없앱니다.</li>
+            <li><b>AI 문장구조 시각화</b> 긴 문장을 절 단위로 분해해 주어·동사·목적어 뼈대를 보여 줍니다. 한글 힌트로 문장을 다시 조립하는 힘은 내신 서술형 영작까지 이어집니다.</li>
+          </ul>
+        </div>
+        <div class="blk">
+          <h4>실력별 단계 독해 커리큘럼</h4>
+          <div class="lv">
+            <table>
+              <thead><tr><th>과정</th><th>수준</th><th>문항</th><th>이런 학생에게</th></tr></thead>
+              <tbody>
+                <tr><td><b>기본독해력</b></td><td>고1</td><td>2,500제</td><td>문장 해석부터 흔들리는 학생</td></tr>
+                <tr><td><b>중급독해력</b></td><td>고2</td><td>2,500제</td><td>해석은 되지만 글 흐름을 놓치는 학생</td></tr>
+                <tr><td><b>고급독해력</b></td><td>고3</td><td>5,000제</td><td>고난도 지문과 수능 실전 감각이 필요한 학생</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">학년이 아니라 진단한 실력에 맞춰 시작 단계를 정합니다.</p>
+        </div>
+        <div class="blk">
+          <h4>파이널 SNAP 리딩</h4>
+          <div class="chips"><span>영영사전 1,000단어 자동화</span><span>직독직해</span><span>독해속도</span><span>AI 구조 분석</span><span>정답논리</span></div>
+          <p class="note">출제자가 왜 이 선택지를 정답으로 만들었는지 꿰뚫어 '해석은 되는데 답이 틀리는' 마지막 벽을 넘습니다.</p>
+        </div>
+        <div class="blk">
+          <h4>매일 관리</h4>
+          <ul>
+            <li><b>4배속 암기학습법</b> 빠르게 보고, 바로 확인하고, 틀린 단어만 다시 돌립니다. 수준별 단어장(고등 Basic부터 EBS 연계 어휘까지)을 배정합니다.</li>
+            <li><b>어휘 누적 테스트</b> 통과하지 못하면 재시험 후 귀가합니다.</li>
+            <li><b>1:1 오답 클리닉</b> 왜 그 답이 정답인지 학생이 직접 근거를 설명합니다.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="addon">
+        <div class="addon-top">
+          <div><p class="eyebrow">Special 02 · Math</p><h3>수학 수능 / 내신 <small style="font-size:.8rem;color:var(--muted);">이든매쓰</small></h3><p class="sub">1:1 맞춤형 문제은행, 오늘 틀린 문제는 오늘 끝냅니다</p></div>
+          <p class="price"><b>4주 150,000원</b><span>8주 300,000원</span></p>
+        </div>
+        <p class="pitch">같은 반, 같은 숙제가 아니라 내 약점만 골라 만든 학습지로 공부합니다.</p>
+        <p style="color: var(--muted); font-size: .95rem;">진단으로 단원·유형별 실력을 색깔로 표시하고, 그 결과에 맞춰 문제은행에서 학생 한 명만을 위한 학습지를 만듭니다. 학생 목표에 따라 <b>수능 트랙</b>(다음 학년 수능 과목 선행과 기출)과 <b>내신 트랙</b>(새 학기 학교 진도와 시험 대비) 중에서 선택합니다. <span class="tbd">트랙별 운영 방식 확인 필요</span></p>
+        <div class="blk">
+          <h4>1:1 맞춤의 4단계</h4>
+          <ul>
+            <li><b>학습 진단</b> 진단평가와 최근 내신·모의고사 성적으로 유형별 성취도를 <span class="dot" style="background:#d84b3e"></span>취약 <span class="dot" style="background:#e5b33a"></span>보통 <span class="dot" style="background:#3c9a5f"></span>우수로 나눕니다.</li>
+            <li><b>수준별 맞춤 학습지</b> 기본·실력·심화 3개 트랙. 빨강 유형은 쉬운 문제부터 다시, 초록 유형은 한 단계 높은 문제로 넘어갑니다.</li>
+            <li><b>오답 완수 시스템</b> 쌍둥이 문제로 다시 풀고, 틀린 이유를 개념 부족·계산 실수·조건 해석·시간 부족으로 분류한 뒤, 코치에게 말로 설명해야 끝납니다.</li>
+            <li><b>1:1 코칭</b> 매일 5분 구술 체크와 5분 인출노트, 매주 15분 코칭으로 색깔 변화와 다음 주 목표를 점검합니다.</li>
+          </ul>
+        </div>
+        <div class="blk">
+          <h4>겨울방학 학년별 설계</h4>
+          <div class="lv">
+            <table>
+              <tbody>
+                <tr><td><b>예비 고1</b></td><td>중등 결손 제거와 계산 정확도, 공통수학1 기초 완성</td></tr>
+                <tr><td><b>예비 고2</b></td><td>내신 과목이 곧 수능 과목인 대수·미적분Ⅰ·확률과 통계 준비</td></tr>
+                <tr><td><b>예비 고3·N수생</b></td><td>누적 단원 총정리, 평가원·교육청 기출, 킬러·준킬러 유형</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="blk">
+          <h4>All-Green 귀가 기준</h4>
+          <p class="note">당일 오답을 쌍둥이 문제로 모두 다시 맞히고 구술 체크를 통과하면 학생 화면이 초록색으로 바뀝니다. 남은 오답은 다음 날 첫 과제로 이어집니다.</p>
+        </div>
+        <div class="blk">
+          <h4>이런 학생에게</h4>
+          <ul>
+            <li>같은 유형을 여러 번 틀리는 학생</li>
+            <li>내신은 나오는데 모의고사 등급이 따라오지 않는 학생</li>
+            <li>다른 학원 교재의 오답만 따로 잡고 싶은 학생 (틀린 문제를 쌍둥이 문제로 점검)</li>
+          </ul>
+        </div>
+      </article>
+      <article class="addon wide">
+        <div class="addon-top">
+          <div><p class="eyebrow">Special 03 · Science</p><h3>과학 <small style="font-size:.8rem;color:var(--muted);">이든사이언스</small></h3><p class="sub">이든X학원 연계 겨울방학 특강 (4주 / 8주)</p></div>
+          <p class="price"><b>수강료 별도 문의</b><span>4주 / 8주</span></p>
+        </div>
+        <p class="pitch">겨울방학 동안 새 학년 과학의 개념 뼈대를 먼저 세웁니다.</p>
+        <p style="color: var(--muted); font-size: .95rem;">인강을 듣고 문제집을 풀어도 시험에서 헷갈리는 건, 배운 내용을 스스로 꺼내 본 적이 없고 현상을 원인과 결과로 잇지 않고 외웠기 때문입니다. 이든사이언스는 개념을 이해하고, 그려 보고, 꺼내 보고, 오답까지 끝내 잡는 과정을 매 수업 반복합니다.</p>
+        <div class="blk">
+          <h4>대상 및 과목</h4>
+          <p class="note">예비 고1 통합과학, 예비 고2·고3 과학탐구 선택 과목 <span class="tbd">개강 과목 확인 필요</span></p>
+          <div class="lv">
+            <table>
+              <tbody>
+                <tr><td><b>예비 고1<br>통합과학</b></td><td>중1~3 과학을 물리 → 화학 → 생명 → 지구 영역별로 이어 복습해 빈 곳을 메우고, 통합과학 1·2 개념을 1회독한 뒤 3월 학력평가 기출로 마무리합니다. 2028 수능 공통과목이 되는 통합과학을 내신과 수능 모두에 맞춰 준비합니다.</td></tr>
+                <tr><td><b>예비 고2·고3<br>과학탐구 선택</b></td><td>물리학·화학·생명과학·지구과학 중 선택한 과목의 개념을 정리하고, 기출 자료 해석과 〈보기〉 문항을 훈련합니다. 진로에 맞는 과목 선택도 함께 상담합니다.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="blk">
+          <h4>수업 방식 · 이든사이언스 7단계</h4>
+          <div class="chips"><span>복습 테스트</span><span>개념강의</span><span>개념노트</span><span>5분 인출(EDEN_CUE)</span><span>2022 개정 문제은행 풀이</span><span>보충 테스트(EDEN_KEY)</span><span>자동 오답 학습지</span></div>
+          <ul>
+            <li><b>서술형·계산·탐구</b> 서술형은 원인 → 과정 → 결과, 계산은 공식 → 수치 대입 → 단위까지 쓰고, 탐구 실험은 목적·변인·결과·결론 4줄로 정리합니다.</li>
+            <li><b>오답 처방</b> 틀린 문제는 개념 결손 · 조건 누락 · 자료 해석 실패로 원인을 나눠 같은 실수가 반복되지 않게 합니다.</li>
+          </ul>
+          <p class="note">자세한 수업 방식은 센터 문의 시 안내해 드립니다.</p>
+        </div>
+        <div class="blk">
+          <h4>관리 연계</h4>
+          <ul>
+            <li>윈터스쿨 4대 관리 안에서 운영되고, 막힌 문제는 이든타에 기록해 화·목 질의응답(EDEN_GO) 시간에 완벽히 해결합니다.</li>
+            <li>PDS 플래너에 과학 단원을 계획하고, 강의 직후 5분 인출노트를 하원 전에 확인합니다.</li>
+            <li>학습 결과는 주간 리포트로 학부모님께 전해 드립니다.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <p class="addon-note">세 강좌 모두 윈터스쿨 4대 관리와 함께 운영되며, 학습 결과는 주간 리포트로 학부모님께 전해 드립니다.</p>
+  </div>
+</section>
+
+<section id="routine">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">A Day & A Week</p>
+      <h2>윈터스쿨의 하루와 한 주</h2>
+      <p>낮 시간은 수능 시간표에 맞춘 교시로, 저녁 이후는 이든 규칙에 따라 운영합니다. 네 가지 관리는 이 교시 안에서 순서대로 맞물려 돌아갑니다.</p>
+    </div>
+    <div class="two">
+      <div class="panel">
+        <h3>하루 흐름</h3>
+        <ol class="flow">
+          <li><span>등원</span>출결 확인, 스마트폰 제출, 학습용 태블릿 MDM 적용</li>
+          <li><span>하루 시작</span>PDS 플래너로 오늘 계획 확인, 이든타 기록 시작</li>
+          <li><span>교시 학습</span>수능 타종에 맞춰 인강·자습, 교시 중 출입 통제, 상시 순찰</li>
+          <li><span>강의 직후</span>EDEN_CUE 5분 인출, 인출노트 작성</li>
+          <li><span>매일 루틴</span>영단어 80개, 국어 어휘 10개·예문 10개</li>
+          <li><span>막힐 때</span>이든타에 질문 기록, EDEN_GO로 해결</li>
+          <li><span>하원 전</span>플래너 실행 여부와 순공 시간 검사 후 퇴실</li>
+        </ol>
+      </div>
+      <div class="panel">
+        <h3>한 주의 PDS 사이클</h3>
+        <div class="week-table">
+          <table>
+            <tbody>
+              <tr><th>월</th><td><b>주간 스타트 코칭</b><br>이번 주 할 일 확정, 이든타 반영</td></tr>
+              <tr><th>화</th><td><b>EDEN_GO 질의응답</b><br>주말·월요일에 쌓인 질문 해결</td></tr>
+              <tr><th>수</th><td><b>과목별 코칭</b><br>진도 점검, 남은 질문 정리</td></tr>
+              <tr><th>목</th><td><b>EDEN_GO 질의응답</b><br>화요일 이후 쌓인 질문 해결</td></tr>
+              <tr><th>금</th><td><b>주간 회고 + 학부모 리포트</b><br>이든타 기록과 질문 해결 현황 공유</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="panel tt">
+      <h3>이든 1일 일과표</h3>
+      <div class="tt-grid"><div class="tt-col"><p class="tt-cap">낮 · 수능 시간표 기준</p><table><tbody><tr class="rest"><th>08:00</th><td>준비</td><td class="len">10분</td></tr><tr><th>08:10</th><td>0교시</td><td class="len">30분</td></tr><tr><th>08:40</th><td>1교시</td><td class="len">80분</td></tr><tr class="rest"><th>10:00</th><td>휴식</td><td class="len">20분</td></tr><tr><th>10:20</th><td>2교시</td><td class="len">100분</td></tr><tr class="rest"><th>12:00</th><td>점심</td><td class="len">70분</td></tr><tr><th>13:10</th><td>3교시</td><td class="len">70분</td></tr><tr class="rest"><th>14:20</th><td>휴식</td><td class="len">20분</td></tr><tr><th>14:40</th><td>4교시</td><td class="len">100분</td></tr><tr class="rest"><th>16:20</th><td>휴식</td><td class="len">20분</td></tr></tbody></table></div><div class="tt-col"><p class="tt-cap">오후·밤 · 이든 규칙</p><table><tbody><tr><th>16:40</th><td>5교시</td><td class="len">80분</td></tr><tr class="rest"><th>18:00</th><td>저녁</td><td class="len">70분</td></tr><tr><th>19:10</th><td>0교시</td><td class="len">20분</td></tr><tr><th>19:30</th><td>6교시</td><td class="len">70분</td></tr><tr class="rest"><th>20:40</th><td>휴식</td><td class="len">20분</td></tr><tr><th>21:00</th><td>7교시</td><td class="len">60분</td></tr><tr class="rest"><th>22:00</th><td>휴식</td><td class="len">10분</td></tr><tr><th>22:10</th><td>8교시</td><td class="len">50분</td></tr><tr class="rest"><th>23:00</th><td>휴식</td><td class="len">10분</td></tr><tr><th>23:10</th><td>9교시</td><td class="len">50분</td></tr></tbody></table></div></div>
+      <p class="note">1교시 80분·2교시 100분은 수능 국어·수학 시험 시간과 같습니다. 학년과 과정에 따라 등·하원 시간은 상담 후 정합니다.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="wrap two">
+    <div class="panel">
+      <h3>학부모님께 전해 드리는 것</h3>
+      <div class="week-table">
+        <table>
+          <tbody>
+            <tr><td><b>매주 금요일</b></td><td>이든타 공부 기록과 질문 해결 현황 주간 리포트</td></tr>
+            <tr><td><b>벌점 부과 시</b></td><td>부과 내역 즉시 통지</td></tr>
+            <tr><td><b>누적 30점</b></td><td>학부모 연락 및 원장 면담</td></tr>
+            <tr><td><b>모의고사 후</b></td><td>수능 메타PRO 과목별 분석 보고서</td></tr>
+            <tr><td><b>진로진학 상담</b></td><td>EDEN_MAP 수시·정시 로드맵</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="panel" id="refund">
+      <h3>환불 규정</h3>
+      <p class="note">학원 환불 규정에 따릅니다.</p>
+      <div class="refund">
+        <table>
+          <thead><tr><th>환불 요청 시점</th><th>환불 금액</th></tr></thead>
+          <tbody>
+            <tr><td>총 교습기간의 1/3 경과 전</td><td class="amt">수강료의 2/3</td></tr>
+            <tr><td>총 교습기간의 1/2 경과 전</td><td class="amt">수강료의 1/2</td></tr>
+            <tr><td>총 교습기간의 1/2 경과 후</td><td class="amt">환불 없음</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--surface);">
+  <div class="wrap director">
+    <div>
+      <p class="eyebrow">From the Director</p>
+      <blockquote style="margin-top: 12px;">"오래 앉아 있는 것만으로는 성적이 오르지 않습니다. 스스로 꺼내 보는 '인출'과 학습의 맥을 짚어 주는 '티코칭'이 더해질 때, 성적은 비로소 움직이기 시작합니다."</blockquote>
+      <div class="body">
+        <p>이든관리형학습센터는 학생을 자리에 앉혀 두는 곳이 아닙니다. 철저한 생활 관리 위에 30년 입시 노하우와 체계적인 학습 시스템을 더해, 공부하는 습관과 방법, 스스로 공부를 이어 가는 힘을 길러 드립니다.</p>
+        <p class="sign">이든관리형학습센터 원장 황붕주</p>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>원장 황붕주</h3>
+      <ul>
+        <li>대치동 20년을 포함한 대입 지도 30년</li>
+        <li>前 강남구청 인터넷수능방송 영어 강사</li>
+        <li>前 경향신문 모의고사 외국어영역 출제위원</li>
+        <li>수능 영어·내신 전문, 입시 컨설팅(EDEN_MAP) 직접 진행</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="apply" id="apply">
+  <div class="wrap">
+    <div class="form-card">
+      <p class="eyebrow" style="text-align: center;">Pre-Registration</p>
+      <h2>2027 사전 예약</h2>
+      <p class="intro">학생 정보를 남겨 주시면 담당 선생님이 확인 전화를 드리고 방문 상담 일정을 잡아 드립니다.</p>
+      <form id="winter-form" novalidate>
+        <div class="field-row">
+          <div class="field"><label class="lbl" for="f_student_name">학생 이름<span class="req">*</span></label><input type="text" id="f_student_name" required placeholder="학생 이름을 입력하세요"></div>
+          <div class="field"><label class="lbl" for="f_grade">학년<span class="req">*</span></label>
+            <select id="f_grade" required>
+              <option value="">학년을 선택하세요</option>
+              <option value="예비 고1">예비 고1 (현 중3)</option>
+              <option value="예비 고2">예비 고2 (현 고1)</option>
+              <option value="예비 고3">예비 고3 (현 고2)</option>
+              <option value="N수생">N수생</option>
+              <option value="예비 중1">예비 중1 (현 초6)</option>
+              <option value="예비 중2">예비 중2 (현 중1)</option>
+              <option value="예비 중3">예비 중3 (현 중2)</option>
+              <option value="기타">기타 (상담 시 안내)</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field"><span class="lbl">남학생 / 여학생 구별<span class="req">*</span></span>
+            <div class="radios" role="radiogroup" aria-label="남녀 학생 구별">
+              <label><input type="radio" name="gender" id="f_gender_m" value="남학생"> 남학생</label>
+              <label><input type="radio" name="gender" id="f_gender_f" value="여학생"> 여학생</label>
+            </div>
+          </div>
+          <div class="field"><label class="lbl" for="f_school_name">학교<span class="req">*</span></label><input type="text" id="f_school_name" required placeholder="예: 미사고등학교"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label class="lbl" for="f_school_grade">최근 내신 등급</label><input type="text" id="f_school_grade" placeholder="예: 국2 영1 수3 / 평균 2.3"><span class="hint">모르시면 비워 두셔도 됩니다.</span></div>
+          <div class="field"><label class="lbl" for="f_mock_grade">모의고사 등급</label><input type="text" id="f_mock_grade" placeholder="예: 국2 수3 영1 탐2·3"><span class="hint">가장 최근 학평·모평 기준</span></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label class="lbl" for="f_parent_phone">학부모 연락처<span class="req">*</span></label><input type="tel" id="f_parent_phone" required placeholder="010-0000-0000" inputmode="tel"><span class="hint">확인 전화를 드릴 번호입니다.</span></div>
+          <div class="field"><label class="lbl" for="f_student_phone">학생 연락처</label><input type="tel" id="f_student_phone" placeholder="010-0000-0000" inputmode="tel"></div>
+        </div>
+
+        <div class="group">
+          <span class="lbl">희망 과정 (다중 선택 가능)<span class="req">*</span></span>
+          <div class="checks">
+            <label><input type="checkbox" name="course" id="c_pre1" value="Pre-Winter 1차(11.16)"> Pre-Winter 1차 · 11.16</label>
+            <label><input type="checkbox" name="course" id="c_pre2" value="Pre-Winter 2차(12.1)"> Pre-Winter 2차 · 12.1</label>
+            <label><input type="checkbox" name="course" id="c_pre3" value="Pre-Winter 3차(12.14)"> Pre-Winter 3차 · 12.14</label>
+            <label><input type="checkbox" name="course" id="c_winter" value="Winter School(1.4~2.28)"> Winter School · 1.4–2.28</label>
+          </div>
+        </div>
+
+        <div class="group">
+          <span class="lbl">추가 과목 신청 · 이든X학원 연계 특별강좌 (선택, 다중 선택 가능)</span>
+          <div class="checks one">
+            <label><input type="checkbox" name="addon" id="a_eng" value="영어 독해"> 영어 독해 · 4주 150,000원 / 8주 290,000원</label>
+            <label><input type="checkbox" name="addon" id="a_math_s" value="수학 수능"> 수학 수능 · 4주 150,000원 / 8주 300,000원</label>
+            <label><input type="checkbox" name="addon" id="a_math_n" value="수학 내신"> 수학 내신 · 4주 150,000원 / 8주 300,000원</label>
+            <label><input type="checkbox" name="addon" id="a_sci" value="과학"> 과학 · 수강료 별도 문의</label>
+          </div>
+          <span class="lbl" style="margin-top:10px;">추가 과목 수강 기간</span>
+          <div class="radios" role="radiogroup" aria-label="추가 과목 수강 기간">
+            <label><input type="radio" name="addon_period" id="p_8" value="8주(1.4~2.28)"> 8주 전체</label>
+            <label><input type="radio" name="addon_period" id="p_a" value="4주(1~4주)"> 4주 · 1–4주</label>
+            <label><input type="radio" name="addon_period" id="p_b" value="4주(5~8주)"> 4주 · 5–8주</label>
+          </div>
+        </div>
+        </div>
+
+        <div class="group">
+          <span class="lbl">이번 겨울방학에 가장 집중하고 싶은 과목 (다중 선택 가능)<span class="req">*</span></span>
+          <div class="checks">
+            <label><input type="checkbox" name="focus_subject" id="s_kor" value="국어"> 국어</label>
+            <label><input type="checkbox" name="focus_subject" id="s_math" value="수학"> 수학</label>
+            <label><input type="checkbox" name="focus_subject" id="s_eng" value="영어"> 영어</label>
+            <label><input type="checkbox" name="focus_subject" id="s_inq" value="탐구"> 탐구</label>
+            <label><input type="checkbox" name="focus_subject" id="s_his" value="한국사"> 한국사</label>
+            <label><input type="checkbox" name="focus_subject" id="s_self" value="자기주도학습"> 자기주도학습 습관 형성</label>
+          </div>
+        </div>
+
+        <div class="group">
+          <span class="lbl">현재 학생이 학습에서 가장 개선하고 싶은 점은 무엇인가요? (복수 선택 가능)<span class="req">*</span></span>
+          <div class="checks one">
+            <label><input type="checkbox" name="improvement" id="i1" value="엉덩이 힘"> 엉덩이 힘 부족 (집중력 부족)</label>
+            <label><input type="checkbox" name="improvement" id="i2" value="스마트폰"> 스마트폰/미디어 유혹</label>
+            <label><input type="checkbox" name="improvement" id="i3" value="실천력"> 작심삼일 계획 (낮은 실천율)</label>
+            <label><input type="checkbox" name="improvement" id="i4" value="공부방법"> 효율적인 공부 방법 부재</label>
+            <label><input type="checkbox" name="improvement" id="i5" value="생활패턴"> 방학 증후군 (늦잠·생활 패턴 붕괴)</label>
+            <label><input type="checkbox" name="improvement" id="i6" value="동기부여"> 동기 부족 (불분명한 목표)</label>
+            <label><input type="checkbox" name="improvement" id="i7" value="시험불안"> 시험 불안/과도한 스트레스</label>
+          </div>
+        </div>
+
+        <div class="group sub">
+          <span class="lbl">[영어] 바로잡고 싶은 부분<span class="req">*</span></span>
+          <div class="checks one">
+            <label><input type="checkbox" name="english_issue" id="e1" value="어휘력"> 어휘력 부족 (암기 기피)</label>
+            <label><input type="checkbox" name="english_issue" id="e2" value="문법"> 문법 개념 미비 (구조 분석 불가)</label>
+            <label><input type="checkbox" name="english_issue" id="e3" value="속도/문해력"> 독해 속도 및 문해력 부족</label>
+            <label><input type="checkbox" name="english_issue" id="e4" value="서술형"> 서술형/내신 주관식 대비 불안</label>
+          </div>
+        </div>
+
+        <div class="group sub">
+          <span class="lbl">[수학] 바로잡고 싶은 부분<span class="req">*</span></span>
+          <div class="checks one">
+            <label><input type="checkbox" name="math_issue" id="m1" value="눈팅학습"> '눈팅' 학습 (개념-적용 괴리)</label>
+            <label><input type="checkbox" name="math_issue" id="m2" value="심화기피"> 심화/킬러 문항 기피</label>
+            <label><input type="checkbox" name="math_issue" id="m3" value="연산실수"> 고질적인 연산/풀이 실수</label>
+            <label><input type="checkbox" name="math_issue" id="m4" value="오답관리"> 형식적인 오답 관리</label>
+            <label><input type="checkbox" name="math_issue" id="m5" value="기초결손"> 이전 과정의 구멍 (결손)</label>
+            <label><input type="checkbox" name="math_issue" id="m6" value="진도불안"> 선행 진도 강박과 막연한 불안</label>
+          </div>
+        </div>
+
+        <div class="group sub">
+          <span class="lbl">[국어·탐구·학습밸런스] 바로잡고 싶은 부분<span class="req">*</span></span>
+          <div class="checks one">
+            <label><input type="checkbox" name="general_issue" id="g1" value="국어문해력"> 국어 문해력 및 시간 부족</label>
+            <label><input type="checkbox" name="general_issue" id="g2" value="탐구방치"> 탐구 과목(사탐/과탐) 방치</label>
+            <label><input type="checkbox" name="general_issue" id="g3" value="밸런스붕괴"> 주객전도형 학습 (밸런스 붕괴)</label>
+            <label><input type="checkbox" name="general_issue" id="g4" value="양치기"> 깊이 없는 양치기식 공부</label>
+          </div>
+        </div>
+
+        <div class="group" style="background: var(--surface);">
+          <div class="field">
+            <label class="lbl" for="consult_date" style="color: var(--ink);">방문 상담 희망 날짜</label>
+            <div class="date-line"><input type="date" id="consult_date"><span class="dow" id="dow"></span></div>
+          </div>
+          <div class="field">
+            <span class="lbl" style="color: var(--ink);">방문 상담 시간</span>
+            <div id="slots-weekday"><p class="slot-day">주중 (월~금)</p>
+              <div class="slots">
+                <label><input type="radio" name="consult_time" id="t_wd1" value="10:00"> 10:00</label>
+                <label><input type="radio" name="consult_time" id="t_wd2" value="11:00"> 11:00</label>
+                <label><input type="radio" name="consult_time" id="t_wd3" value="13:30"> 13:30</label>
+                <label><input type="radio" name="consult_time" id="t_wd4" value="14:30"> 14:30</label>
+                <label><input type="radio" name="consult_time" id="t_wd5" value="20:00"> 20:00</label>
+                <label><input type="radio" name="consult_time" id="t_wd6" value="21:00"> 21:00</label>
+              </div>
+            </div>
+            <div id="slots-weekend" hidden><p class="slot-day" id="weekend-label">주말</p>
+              <div class="slots">
+                <label><input type="radio" name="consult_time" id="t_we1" value="10:00"> 10:00</label>
+                <label><input type="radio" name="consult_time" id="t_we2" value="11:00"> 11:00</label>
+                <label><input type="radio" name="consult_time" id="t_we3" value="13:30"> 13:30</label>
+                <label><input type="radio" name="consult_time" id="t_we4" value="14:30"> 14:30</label>
+                <label><input type="radio" name="consult_time" id="t_we5" value="15:30"> 15:30</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field"><label class="lbl" for="f_message">문의 및 건의사항 (추가 고민사항)</label><textarea id="f_message" rows="4" placeholder="기타 궁금하신 점이나 학생의 특이사항을 자유롭게 적어주세요."></textarea></div>
+
+        <div class="agree"><label><input type="checkbox" id="privacy_agree"> <span>[필수] 개인정보 수집 및 이용에 동의합니다. (사전 예약 확인 및 학원 안내 서비스 제공 목적)</span></label></div>
+
+        <div id="form-msg" class="msg" role="status" hidden></div>
+        <button type="submit" class="submit" id="submit-btn">사전 예약 신청하기</button>
+        <p class="after">신청 후 담당 선생님이 순차적으로 확인 전화를 드립니다.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>겨울 8주, 자리는 한정되어 있습니다.</h2>
+    <p>선착순으로 마감됩니다.</p>
+    <a href="#apply" class="cta" style="justify-self: center; margin: 12px 0;">2027 사전 예약하기</a>
+    <p>경기도 하남시 미사강변대로 80, 그린프라자 7층 이든관리형학습센터</p>
+    <p class="tel">010-8442-2817</p>
+    <small>© 2026 이든관리형학습센터 · 이든X학원</small>
+  </div>
+</footer>
+
+<script>
+  /* 눈 내리는 배경 (모션 감소 설정 시 정지 화면) */
+  (function () {
+    var c = document.getElementById('snow'); if (!c) return;
+    var ctx = c.getContext('2d'), flakes = [], w, h;
+    var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function size() { w = c.width = c.offsetWidth; h = c.height = c.offsetHeight; }
+    size(); window.addEventListener('resize', size);
+    for (var i = 0; i < 90; i++) flakes.push({ x: Math.random(), y: Math.random(), r: Math.random() * 2 + .6, s: Math.random() * .4 + .15, d: Math.random() * .6 - .3 });
+    function draw() {
+      ctx.clearRect(0, 0, w, h); ctx.fillStyle = 'rgba(255,255,255,.8)';
+      flakes.forEach(function (f) {
+        ctx.beginPath(); ctx.arc(f.x * w, f.y * h, f.r, 0, 6.283); ctx.fill();
+        if (!still) { f.y += f.s / h * 2; f.x += f.d / w; if (f.y > 1) { f.y = 0; f.x = Math.random(); } }
+      });
+      if (!still) requestAnimationFrame(draw);
+    }
+    draw();
+  })();
+
+  /* 상담 날짜 → 요일 표시와 시간 슬롯 전환 */
+  var DAYS = ['일', '월', '화', '수', '목', '금', '토'];
+  var dateInput = document.getElementById('consult_date');
+  dateInput.addEventListener('input', function () {
+    document.querySelectorAll('input[name="consult_time"]').forEach(function (r) { r.checked = false; });
+    var wd = document.getElementById('slots-weekday'), we = document.getElementById('slots-weekend'), dow = document.getElementById('dow');
+    if (!dateInput.value) { dow.textContent = ''; wd.hidden = false; we.hidden = true; return; }
+    var p = dateInput.value.split('-').map(Number), day = new Date(p[0], p[1] - 1, p[2]).getDay();
+    dow.textContent = '(' + DAYS[day] + ')';
+    var weekend = day === 0 || day === 6;
+    wd.hidden = weekend; we.hidden = !weekend;
+    document.getElementById('weekend-label').textContent = day === 6 ? '토요일' : '일요일';
+  });
+
+  /* 제출: Google Apps Script 웹앱 URL을 넣으면 시트로 저장됩니다. 비어 있으면 미리보기 모드 */
+  var scriptURL = '';
+  var form = document.getElementById('winter-form');
+  var msg = document.getElementById('form-msg');
+  function show(text, ok) { msg.textContent = text; msg.className = 'msg ' + (ok ? 'ok' : 'err'); msg.hidden = false; }
+  function checked(name) { return Array.prototype.map.call(document.querySelectorAll('input[name="' + name + '"]:checked'), function (el) { return el.value; }).join(', '); }
+  function val(id) { return document.getElementById(id).value.trim(); }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var required = [['f_student_name', '학생 이름'], ['f_grade', '학년'], ['f_school_name', '학교'], ['f_parent_phone', '학부모 연락처']];
+    for (var i = 0; i < required.length; i++) {
+      if (!val(required[i][0])) { show(required[i][1] + '을(를) 입력해 주세요.', false); document.getElementById(required[i][0]).focus(); return; }
+    }
+    if (!checked('gender')) { show('남학생·여학생을 선택해 주세요.', false); return; }
+    var groups = [['course', '희망 과정'], ['focus_subject', '집중하고 싶은 과목'], ['improvement', '개선하고 싶은 점'], ['english_issue', '[영어] 바로잡고 싶은 부분'], ['math_issue', '[수학] 바로잡고 싶은 부분'], ['general_issue', '[국어·탐구·학습밸런스] 바로잡고 싶은 부분']];
+    for (var j = 0; j < groups.length; j++) {
+      if (!checked(groups[j][0])) { show("'" + groups[j][1] + "'에서 하나 이상 선택해 주세요.", false); return; }
+    }
+    if (checked('addon') && !checked('addon_period')) { show('추가 과목 수강 기간을 선택해 주세요.', false); return; }
+    if (!document.getElementById('privacy_agree').checked) { show('개인정보 수집 및 이용에 동의해 주세요.', false); return; }
+
+    var params = new URLSearchParams();
+    params.append('student_name', val('f_student_name'));
+    params.append('grade', val('f_grade'));
+    params.append('gender', checked('gender'));
+    params.append('school_name', val('f_school_name'));
+    params.append('school_grade', val('f_school_grade'));
+    params.append('mock_grade', val('f_mock_grade'));
+    params.append('parent_phone', val('f_parent_phone'));
+    params.append('student_phone', val('f_student_phone'));
+    params.append('course', checked('course'));
+    params.append('addon', checked('addon'));
+    params.append('addon_period', checked('addon_period'));
+    params.append('focus_subject', checked('focus_subject'));
+    params.append('improvement', checked('improvement'));
+    params.append('english_issue', checked('english_issue'));
+    params.append('math_issue', checked('math_issue'));
+    params.append('general_issue', checked('general_issue'));
+    params.append('consult_date', dateInput.value);
+    params.append('consult_time', checked('consult_time'));
+    params.append('message', val('f_message'));
+
+    if (!scriptURL) { show('미리보기 화면이라 실제로 전송되지는 않았습니다. 입력 확인은 정상입니다.', true); return; }
+
+    var btn = document.getElementById('submit-btn');
+    btn.disabled = true; btn.textContent = '제출 중입니다...';
+    fetch(scriptURL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: params.toString() })
+      .then(function () {
+        show('사전 예약이 접수되었습니다. 담당 선생님이 순차적으로 확인 전화를 드립니다.', true);
+        form.reset(); document.getElementById('dow').textContent = '';
+        document.getElementById('slots-weekday').hidden = false; document.getElementById('slots-weekend').hidden = true;
+      })
+      .catch(function () { show('전송 중 오류가 발생했습니다. 잠시 후 다시 시도하시거나 010-8442-2817로 연락 주세요.', false); })
+      .finally(function () { btn.disabled = false; btn.textContent = '사전 예약 신청하기'; });
+  });
+</script>
+
+</body>
+</html>
